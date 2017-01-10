@@ -9,6 +9,7 @@ function StudioEditSubmit(runtime, element) {
         data.append('usage_id', $element.data('usage-id'));
         data.append('display_name', $element.find('input[name=display_name]').val());
         data.append('display_description', $element.find('input[name=display_description]').val());
+        data.append('content_text', $element.find('#content_text').val());
         data.append('thumbnail', $element.find('input[name=thumbnail]')[0].files[0]);
 
         runtime.notify('save', {state: 'start'});
