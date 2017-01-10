@@ -1,0 +1,9 @@
+/* CSS for RawHtmlXBlock */
+
+.raw_html_block .count {
+    font-weight: bold;
+}
+
+.raw_html_block p {
+    cursor: pointer;
+}
