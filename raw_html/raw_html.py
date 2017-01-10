@@ -47,10 +47,6 @@ class RawHtmlXBlock(XBlock, FileUploadMixin):
             'content_text': self.content_text
         }
 
-        #html = self.resource_string("static/html/raw_html.html")
-        #frag = Fragment(unicode(html).format(
-        #    content_text=self.content_text
-        #))
         html = self.render_template('static/html/raw_html.html', context)
         frag = Fragment(html)
         frag.add_css(self.resource_string("static/css/raw_html.css"))
