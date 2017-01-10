@@ -1,0 +1,49 @@
+<div class="wrapper-comp-settings is-active editor-with-buttons textimage-studio" id="settings-tab" >
+    <ul class="list-input settings-list" >
+        <li class="field comp-setting-entry is-set" >
+            <div class="wrapper-comp-setting" >
+                <label class="label setting-label" for="display_name" >Media Title</label >
+                <input class="input setting-input" name="display_name" id="display_name" value="{self.display_name}"
+                       type="text" />
+            </div >
+            <span class="tip setting-help" >Example: Raw HTML</span >
+        </li >
+
+        <li class="field comp-setting-entry is-set" >
+            <div class="wrapper-comp-setting" >
+                <label class="label setting-label" for="display_description" >Media Description</label >
+                <input class="input setting-input" name="display_description" id="display_description"
+                       value="{self.display_description}" type="text" />
+            </div >
+            <span class="tip setting-help" >Example: Description of this block</span >
+        </li >
+
+        <li class="field comp-setting-entry is-set" >
+            <div class="wrapper-comp-setting" >
+                <label class="label setting-label" for="thumbnail" >Media Thumbnail</label >
+                <input class="input setting-input" name="thumbnail" id="thumbnail" type="file" />
+            </div >
+            <span class="tip setting-help" >Upload a thumbnail image</span >
+        </li >
+
+        <li class="field comp-setting-entry is-set" >
+            <div class="wrapper-comp-setting" >
+                <label class="label setting-label" for="content_text" >Content text</label >
+                <textarea class="input setting-input" name="content_text" id="content_text"
+                          type="text" >{self.content_text}</textarea >
+            </div >
+            <span class="tip setting-help" >A place to paste the HTML</span >
+        </li >
+    </ul >
+
+    <div class="xblock-actions" >
+        <ul >
+            <li class="action-item" >
+                <a href="#" class="button action-primary save-button" >Save</a >
+            </li >
+            <li class="action-item" >
+                <a href="#" class="button cancel-button" >Cancel</a >
+            </li >
+        </ul >
+    </div >
+</div >

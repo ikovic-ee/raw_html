@@ -1,9 +1,17 @@
-/* CSS for RawHtmlXBlock */
-
-.raw_html_block .count {
-    font-weight: bold;
+.xblock-render .textimagexblock-wrapper {
+  position: relative !important;
 }
 
-.raw_html_block p {
-    cursor: pointer;
+.xblock-render .background {
+  width: auto !important;
+}
+
+.rawHtmlXblock-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
