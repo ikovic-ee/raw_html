@@ -14,7 +14,7 @@ from xblock_django.mixins import FileUploadMixin
 class RawHtmlXBlock(XBlock, FileUploadMixin):
     content_text = String(help="Raw HTML content", default='', scope=Scope.content)
     display_name = String(display_name="Display Name",
-                          default="Raw HTML",
+                          default="RAW HTML",
                           scope=Scope.settings,
                           help="This name appears in the horizontal navigation at the top of the page.")
 
